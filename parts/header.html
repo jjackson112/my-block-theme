@@ -1,0 +1,51 @@
+<!-- wp:group {"tagName":"header","className":"site-header"} -->
+<header class="wp-block-group site-header relative">
+
+    <!-- Nav bar -->
+    <!-- wp:group {"tagName":"nav","className":"flex items-center justify-between px-6 py-4 bg-black"} -->
+    <nav class="wp-block-group flex items-center justify-between px-6 py-4 bg-black">
+
+        <!-- Left: Logo + Title -->
+        <!-- wp:group {"className":"flex items-center space-x-3"} -->
+        <div class="wp-block-group flex items-center space-x-3">
+            <!-- wp:site-logo {"width":48} /-->
+            <!-- wp:site-title {"className":"text-md text-sky-400 font-semibold hover:text-sky-300"} /-->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Desktop Nav -->
+        <!-- wp:navigation {"overlayMenu":"never","className":"hidden md:flex"} /-->
+
+        <!-- Mobile Hamburger -->
+        <button 
+            class="md:hidden text-2xl text-sky-400"
+            data-mobile-btn
+            aria-label="Open mobile menu"
+        >
+            ☰
+        </button>
+
+    </nav>
+    <!-- /wp:group -->
+
+
+    <!-- MOBILE MENU -->
+    <div 
+        data-mobile-menu
+        class="hidden max-h-0 overflow-hidden transition-all duration-300 ease-out flex-col bg-white px-6 py-4 space-y-4 shadow md:hidden opacity-0 transform -translate-y-2 w-56 rounded-lg absolute right-6 top-16 z-50"
+    >
+        <button 
+            data-mobile-close
+            class="absolute top-4 right-4"
+            aria-label="Close menu"
+        >
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- wp:navigation {"overlayMenu":"never"} /-->
+    </div>
+
+</header>
+<!-- /wp:group -->
