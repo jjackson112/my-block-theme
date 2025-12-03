@@ -1,9 +1,6 @@
 <!-- wp:template-part {"slug":"header", "tagName":"header"} /-->
 <!-- wp:group {"tagName": "main", "className":"single-post-container px-6 py-12 max-w-3xl mx-auto"} -->
 <main class="single-post-container px-6 py-12 max-w-3xl mx-auto">
-    
-    <!-- Featured Image -->
-    <!-- wp:post-featured-image {"className": "w-full h-80 object-cover rounded-2xl shadow"} /-->
 
     <!-- Title -->
     <!-- wp:post-title {"Level":1, "className":"text-4xl font-bold mb-4 text-sky-400"} /-->
@@ -11,11 +8,11 @@
     <!-- Post Meta -->
     <!-- wp:group {"className": "text-gray-500 mb-8"} --> 
     <div class="text-gray-500 mb-8 flex items-center gap-2">
-        <i class="fa-regular fa-clock"></i>
+        <i class="fa-regular fa-clock text-sky-950"></i>
         <!-- wp:post-date /-->
     </div>
-        <!-- wp:post-terms {"term":"category"} /-->
-        <!-- wp:post-terms {"term":"post_tag"} /-->
+    <!-- Featured Image -->
+    <!-- wp:post-featured-image {"className": "w-full aspect-[16/9] rounded-2xl overflow-hidden shadow mb-12"} /-->
 
     <!-- Content -->
     <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
@@ -27,4 +24,4 @@
     <!-- wp:template-part {"slug":"pagination","theme":"my-block-theme","tagName":"section"} /-->
 </main>
 <!-- /wp:group -->
-<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer", "tagName":"footer"} /-->
