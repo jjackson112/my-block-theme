@@ -1,0 +1,9 @@
+/*
+Theme: Dorpthy de Long block theme
+*/
+
+.fa-solid,
+.fa-regular,
+.fa-brands {
+    color: inherit;
+}
