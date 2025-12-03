@@ -51,7 +51,7 @@
 
   "styles": {
     "color": {
-      "text": "var(--wp--preset--color--white)"
+      "text": "var(--wp--preset--color--sky-blue-950)"
     },
 
     "blocks": {
