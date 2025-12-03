@@ -15,7 +15,6 @@
           "name": "Black"
         },
 
-        /* Tailwind-style colors */
         {
           "slug": "sky-blue-400",
           "color": "#38bdf8",
@@ -31,6 +30,14 @@
       "customGradient": true
     },
 
+    "spacing": {
+      "spacingSizes": [
+        { "slug": "px-4", "size": "1rem" },
+        { "slug": "px-6", "size": "1.5rem" },
+        { "slug": "px-8", "size": "2rem" }
+    ]
+    },
+
     "typography": {
       "fontFamilies": [
         {
@@ -43,12 +50,10 @@
   },
 
   "styles": {
-    /* Global text color defaults */
     "color": {
       "text": "var(--wp--preset--color--white)"
     },
 
-    /* Block-specific styling */
     "blocks": {
       "core/navigation": {
         "color": {
@@ -62,7 +67,6 @@
       }
     },
 
-    /* Link color across the whole theme */
     "elements": {
       "link": {
         "color": {
