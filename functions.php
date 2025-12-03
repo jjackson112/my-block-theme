@@ -1,7 +1,7 @@
 <?php
-// Enqueue scripts
-add_action('wp_enqueue_scripts', 'dorothy_enqueue_scripts');
-function dorothy_enqueue_scripts() {
+// Enqueue scripts and styles
+add_action('wp_enqueue_scripts', 'dorothy_enqueue_assets');
+function dorothy_enqueue_assets() {
 
     // Mobile menu JS
     wp_enqueue_script(
@@ -12,20 +12,15 @@ function dorothy_enqueue_scripts() {
         true
     );
 
-    // Tailwind CDN (this is a JS file, not CSS)
-    wp_enqueue_script(
+    // Tailwind CSS CDN
+    wp_enqueue_style(
         'tailwind-cdn',
-        'https://cdn.tailwindcss.com',
+        'https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css',
         [],
-        null,
-        false
+        null
     );
-}
 
-// Enqueue editor + front-end CSS if you have any
-add_action('wp_enqueue_scripts', 'dorothy_enqueue_styles');
-function dorothy_enqueue_styles() {
-    // Add your theme stylesheet (optional)
+    // Theme stylesheet
     wp_enqueue_style(
         'dorothy-style',
         get_stylesheet_uri(),

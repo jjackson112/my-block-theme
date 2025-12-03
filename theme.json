@@ -1,24 +1,74 @@
 {
   "version": 2,
+
   "settings": {
-    "custom": {
-      "logo": true
-    },
     "color": {
-      "custom": true
+      "palette": [
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        },
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "Black"
+        },
+
+        /* Tailwind-style colors */
+        {
+          "slug": "sky-blue-400",
+          "color": "#38bdf8",
+          "name": "Sky Blue 400"
+        },
+        {
+          "slug": "sky-blue-500",
+          "color": "#0ea5e9",
+          "name": "Sky Blue 500"
+        }
+      ],
+      "custom": true,
+      "customGradient": true
     },
+
     "typography": {
-      "customFontSize": true
+      "fontFamilies": [
+        {
+          "slug": "inter",
+          "fontFamily": "Inter, sans-serif",
+          "name": "Inter"
+        }
+      ]
     }
   },
+
   "styles": {
+    /* Global text color defaults */
     "color": {
-      "background": "#ffffff",
-      "text": "#1e293b"
+      "text": "var(--wp--preset--color--white)"
     },
-    "typography": {
-      "fontFamily": "system-ui, sans-serif",
-      "lineHeight": "1.5"
+
+    /* Block-specific styling */
+    "blocks": {
+      "core/navigation": {
+        "color": {
+          "text": "var(--wp--preset--color--sky-blue-400)"
+        }
+      },
+      "core/navigation-link": {
+        "color": {
+          "text": "var(--wp--preset--color--sky-blue-400)"
+        }
+      }
+    },
+
+    /* Link color across the whole theme */
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--sky-blue-400)"
+        }
+      }
     }
   }
 }
