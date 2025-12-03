@@ -13,12 +13,12 @@ function dorothy_enqueue_assets() {
     );
 
     // Tailwind CSS CDN
-    // wp_enqueue_style(
-    //    'tailwind-cdn',
-    //    'https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css',
-     //   [],
-      //  null
-    //);
+    wp_enqueue_style(
+        'tailwind-cdn',
+        'https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css',
+        [],
+        null
+    );
 
     // Font Awesome
     wp_enqueue_style(
