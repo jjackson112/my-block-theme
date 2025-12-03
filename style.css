@@ -7,3 +7,17 @@ Theme: Dorpthy de Long block theme
 .fa-brands {
     color: inherit;
 }
+
+/* Start closed */
+.mobile-menu {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* When open */
+.mobile-menu.open {
+    max-height: 500px; /* something large enough */
+    opacity: 1;
+    transform: translateY(0);
+}
