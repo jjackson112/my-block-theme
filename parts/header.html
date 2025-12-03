@@ -18,6 +18,7 @@
 
         <!-- Mobile Hamburger -->
         <button 
+            id="mobile-btn"
             class="md:hidden text-2xl text-sky-400"
             data-mobile-btn
             aria-label="Open mobile menu"
@@ -31,11 +32,13 @@
     <!-- MOBILE MENU -->
     <div 
         data-mobile-menu
+        id="mobile-menu"
         class="hidden max-h-0 overflow-hidden transition-all duration-300 ease-out flex-col bg-white px-6 py-4 space-y-4 shadow md:hidden opacity-0 transform -translate-y-2 w-56 rounded-lg absolute right-6 top-16 z-50"
     >
         <!-- Close button -->
         <button 
             data-mobile-close
+            id="mobileMenuClose"
             class="absolute top-4 right-4"
             aria-label="Close menu"
         >

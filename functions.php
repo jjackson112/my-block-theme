@@ -6,7 +6,7 @@ function dorothy_enqueue_assets() {
     // Mobile menu JS
     wp_enqueue_script(
         'mobile-menu',
-        get_theme_file_uri('/assets/js/mobile-menu.js'),
+        get_theme_file_uri('../assets/js/mobile-menu.js'),
         [],
         null,
         true
