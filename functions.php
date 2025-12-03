@@ -6,19 +6,19 @@ function dorothy_enqueue_assets() {
     // Mobile menu JS
     wp_enqueue_script(
         'mobile-menu',
-        get_theme_file_uri('../assets/js/mobile-menu.js'),
+        get_theme_file_uri('/assets/js/mobile-menu.js'),
         [],
-        null,
+        filemtime(get_theme_file_path('/assets/js/mobile-menu.js')),
         true
     );
 
     // Tailwind CSS CDN
-    wp_enqueue_style(
-        'tailwind-cdn',
-        'https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css',
-        [],
-        null
-    );
+    // wp_enqueue_style(
+    //    'tailwind-cdn',
+    //    'https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css',
+     //   [],
+      //  null
+    //);
 
     // Font Awesome
     wp_enqueue_style(
@@ -33,7 +33,7 @@ function dorothy_enqueue_assets() {
         'dorothy-style',
         get_stylesheet_uri(),
         [],
-        null
+        filemtime(get_theme_file_path('/style.css'))
     );
 
 }
