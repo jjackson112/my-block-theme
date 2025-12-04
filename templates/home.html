@@ -1,34 +1,46 @@
 <!-- wp:template-part {"slug":"header", "tagName":"header"} /-->
 
-<main class="archive-container max-w-6xl mx-auto px-6 py-12">
-    
-    <!-- Page Title -->
-    <h1 class="text-3xl font-bold text-center text-sky-900 mb-10">Latest Travels</h1>
+<main class="max-w-6xl mx-auto px-6 py-12">
 
-    <!-- Posts Loop -->
-    <!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date"}} -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        <!-- wp:post-template -->
-        <article class="bg-white p-6 shadow rounded-lg flex flex-col hover:shadow-lg transition-shadow duration-300">
-            <!-- Featured Image -->
-            <!-- wp:post-featured-image {"className":"w-full aspect-[16/9] rounded-lg overflow-hidden mb-4"} /-->
+<!-- Page Title -->
+<h1 class="text-3xl font-bold text-center text-sky-900 mb-10">Latest Travels</h1>
 
-            <!-- Post Title -->
-            <!-- wp:post-title {"level":2, "className":"text-2xl font-bold text-sky-400 mb-2"} /-->
-            
-            <!-- Excerpt -->
-            <!-- wp:post-excerpt{"className":"text-sky-900 text-sm mb-4"} /-->
+<!-- Posts Loop -->
+<!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date"}} -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- wp:post-template -->
+    <article class="bg-white p-6 shadow rounded-lg flex flex-col hover:shadow-lg transition-shadow duration-300">
 
-            <!-- Read More -->
-            <!-- wp:post-permalink {"className":"text-sky-600 font-semibold"} /-->
+        <!-- Featured Image -->
+        <!-- wp:post-featured-image {"className":"w-full h-72 object-cover"} /-->
 
-        </article>
-        <!--/wp:post-template -->
-    </div>
-    <!-- /wp:query -->
+        <!-- Post Title -->
+        <!-- wp:post-title {"level":2,"className":"text-2xl font-semibold text-sky-950 mb-2 hover:text-sky-400"} /-->
 
-    <!-- Pagination -->
-    <!-- wp:template-part {"slug":"pagination","tagName":"section"} /-->
+        <!-- Post Meta -->
+        <!-- wp:group {"className": "text-gray-500 mb-8"} --> 
+        <div class="text-gray-500 mb-8 flex items-center gap-2">
+            <i class="fa-regular fa-calendar text-sky-950"></i>
+        <!-- wp:post-date /-->
+        </div>
+
+        <!-- Excerpt (flex-grow keeps heights equal) -->
+        <div class="flex-grow">
+            <!-- wp:post-excerpt {"className":"text-sky-950 text-sm mb-4"} /-->
+        </div>
+
+        <!-- Read More -->
+        <!-- wp:post-permalink {"className":"text-sky-400 font-semibold hover:text-sky-300"} -->
+        <a class="text-sky-400 font-semibold hover:text-sky-300">Read More →</a>
+        <!-- /wp:post-permalink -->
+
+    </article>
+    <!-- /wp:post-template -->
+</div>
+<!-- /wp:query -->
+
+<!-- Pagination -->
+<!-- wp:template-part {"slug":"pagination","tagName":"section"} /-->
 
 </main>
-<!-- wp:template-part {"slug":"footer", "tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
