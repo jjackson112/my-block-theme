@@ -64,6 +64,11 @@
         "color": {
           "text": "var(--wp--preset--color--sky-blue-400)"
         }
+      },
+      "core/post-template": {
+        "layout": {
+          "type": "grid"
+        }
       }
     },
 
