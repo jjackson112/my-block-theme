@@ -18,17 +18,25 @@ ACF no longer uses PHP but blocks (field blocks or API)
         <!-- wp:post-featured-image {"className":"w-full h-80 object-cover rounded-2xl shadow"} /-->
 
         <!-- Event Meta or ACF fields here -->
+        
+        <!-- Event Date -->
         <p class="text-lg font-medium">
             <i class="fa-regular fa-calendar text-sky-950"></i>
         </p>
         <!-- wp:post-date {"level":4} /-->
        
-        <h4 class="text-lg font-medium"><i class="fa-regular fa-clock text-sky-950"></i><?php echo esc_html($time); ?></h4>
+        <!-- Event Time - ACF -->
+        <i class="fa-regular fa-clock text-sky-950"></i>
+        <!-- wp:acf/field {"name":"time","label":"Time","className":"text-lg font-medium"} /-->
         
         <!-- Event Content -->
 	    <!-- wp:post-content {"className":"prose max-w-none pt-5"} /-->
                 
-        <p class="hover:text-sky-300 font-semibold mt-5"><a target="_blank" rel="noreferrer" href="<?php echo esc_url($link) ?>">Click here for more details</a></p>
+        <!-- Event Link -->
+        <!-- wp:post-permalink {"className":"text-sky-400 font-semibold hover:text-sky-300"} -->
+        <p class="hover:text-sky-300 font-semibold mt-5"><a target="_blank" rel="noreferrer" href=>Click here for more details</a></p>
+        <!-- /wp:post-permalink -->
+
     </article>
 </main>
 
