@@ -4,8 +4,21 @@ Slug: page
 will use index.html if this is not here
 -->
 
-<!-- wp:template-part {"slug":"header", "tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
 
+<main class="max-w-3xl mx-auto px-6 py-16">
 
+    <article class="prose max-w-none">
+        <!-- Page Title -->
+        <!-- wp:post-title {"isLink":true, "className":"text-4xl font-bold mb-6"} /-->
+
+        <!-- Page Content -->
+        <!-- wp:post-content {"className":"text-lg leading-relaxed"} /-->
+
+    </article>
+    <!-- /wp:post-template -->
+
+</main>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer"} /-->
