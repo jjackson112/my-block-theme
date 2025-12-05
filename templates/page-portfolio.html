@@ -9,53 +9,64 @@ Slug: page-portfolio
 <section class="text-center bg-white pb-16 px-6">
 
     <!-- Portfolio Page Title -->
-    <!-- wp:post-title {"level":1, "className": "text-3xl font-bold text-sky-950 p-10"} -->
+    <!-- wp:post-title {"level":1, "className": "text-3xl font-bold text-sky-950 p-10"} /-->
 
-
+        <!-- Content Container -->
+        <!-- wp:group {"className":"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto"} -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+            
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/black-girl-magic.png" 
+                src="/wp-content/themes/my-block-theme/assets/img/black-girl-magic.png" 
                 alt="black girl smiling at camera">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Black Girl Magic<br> Houston, TX.<br> January 17, 2018</figcaption>
             </figure>
+
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/flex.png"
+                src="/wp-content/themes/my-block-theme/assets/img/flex.png"
                 alt="woman on a flex machine working out">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Flex<br> Madison, WI.<br> July 24, 2020</figcaption>
             </figure>
+
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/moment.png"
+                src="/wp-content/themes/my-block-theme/assets/img/moment.png"
                 alt="woman on stage performing jumping mid-air">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Moment, FemRockFest<br> Austin, Texas<br> July 17, 2021</figcaption>
             </figure>
+
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/flag.png"
+                src="/wp-content/themes/my-block-theme/assets/img/flag.png"
                 alt="woman with pride flag over her shoulders">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Flag LGBTQIA March<br> in Washington, DC<br> November 12, 2022</figcaption>
             </figure>
+
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/father.png"
+                src="/wp-content/themes/my-block-theme/assets/img/father.png"
                 alt="father with daughter on shoulders at a festival">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Father<br> Denver, Colorado<br> June 25, 2024</figcaption>
             </figure>
+
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/haircut.png"
+                src="/wp-content/themes/my-block-theme/assets/img/haircut.png"
                 alt="male hairstylist doing woman's hair">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Haircut<br> New York City<br> March 31, 2025</figcaption>
             </figure>
         </div>
+        <!-- /wp:group -->
+        
+        <!-- Recent Projects Button -->
         <div class="pt-4">
             <a href="#" 
             class="inline-block bg-sky-900 hover:bg-sky-400 focus:bg-sky-700 focus:outline-none focus:ring-4 focus:ring-sky-300 text-white font-bold py-2 px-6 rounded-full transition-colors m-5">
                 Recent Projects
             </a>
         </div>
+
 </section>
 <!-- /wp:group -->
 
