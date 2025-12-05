@@ -18,13 +18,13 @@ ACF no longer uses PHP but blocks (field blocks or API)
         <!-- wp:post-featured-image {"className":"w-full h-80 object-cover rounded-2xl shadow"} /-->
 
         <!-- Event Meta or ACF fields here -->
-        <!-- -->
-                    <p class="text-lg font-medium"><i class="fa-regular fa-calendar text-sky-950"></i><?php echo esc_html($date); ?></h4>
-                <?php endif; ?>
-
-                <?php if ($time) : ?>
-                    <h4 class="text-lg font-medium"><i class="fa-regular fa-clock text-sky-950"></i><?php echo esc_html($time); ?></h4>
-                <?php endif; ?>
+        <p class="text-lg font-medium">
+            <i class="fa-regular fa-calendar text-sky-950"></i>
+        </p>
+        <!-- wp:post-date {"level":4} /-->
+       
+        <h4 class="text-lg font-medium"><i class="fa-regular fa-clock text-sky-950"></i><?php echo esc_html($time); ?></h4>
+        
         <!-- Event Content -->
 	    <!-- wp:post-content {"className":"prose max-w-none pt-5"} /-->
                 
