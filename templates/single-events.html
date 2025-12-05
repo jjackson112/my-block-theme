@@ -1,9 +1,35 @@
 <!-- 
 Title: Individual custom post type - events
 Slug: event
+no while loop
+ACF no longer uses PHP but blocks (field blocks or API)
 -->
 
 <!-- wp: template-part {"slug":"header"} /-->
 
+<main class="max-w-4xl mx-auto p-6">
+        
+    <article class="flex justify-center mb-4 text-gray-600 px-6 py-12">
+
+        <!-- Event Title -->
+        <!-- wp:post-title {"level":2, "className":"text-3xl font-bold text-sky-950 pt-5 pb-5"} /-->
+        
+        <!-- Featured Image -->
+        <!-- wp:post-featured-image {"className":"w-full h-80 object-cover rounded-2xl shadow"} /-->
+
+        <!-- Event Meta or ACF fields here -->
+        <!-- -->
+                    <p class="text-lg font-medium"><i class="fa-regular fa-calendar text-sky-950"></i><?php echo esc_html($date); ?></h4>
+                <?php endif; ?>
+
+                <?php if ($time) : ?>
+                    <h4 class="text-lg font-medium"><i class="fa-regular fa-clock text-sky-950"></i><?php echo esc_html($time); ?></h4>
+                <?php endif; ?>
+        <!-- Event Content -->
+	    <!-- wp:post-content {"className":"prose max-w-none pt-5"} /-->
+                
+        <p class="hover:text-sky-300 font-semibold mt-5"><a target="_blank" rel="noreferrer" href="<?php echo esc_url($link) ?>">Click here for more details</a></p>
+    </article>
+</main>
 
 <!-- wp: template-part {"slug":"footer"} /-->
