@@ -16,34 +16,23 @@
         <!-- Featured Image -->
         <!-- wp:post-featured-image {"className":"w-full h-48 object-cover"} /-->
 
-        <!-- Post Title -->
-        <!-- wp:post-title {"level":2,"className":"text-xl font-semibold text-sky-950 mb-2 hover:text-sky-300"} /-->
+            <div class="p-6"></div>
+            <!-- Post Title -->
+            <!-- wp:post-title {"level":2,"className":"text-xl font-semibold text-sky-950 mb-2 hover:text-sky-300"} /-->
 
+            <!-- Event Date -->
+                <p class="text-md mb-2">
+                    <i class="fa-regular fa-clock text-sky-950"></i>
+                </p>
 
-            <div class="p-6">
-                    <h2 class="text-xl font-semibold mb-2">
-                        <a href="<?php the_permalink(); ?>" class="hover:text-sky-300">
-                            <?php the_title(); ?>
-                        </a>
-                    </h2>
-
-                    <p class="text-md mb-2">
-                        <i class="fa-regular fa-clock text-sky-950"></i>
-                        <?php echo get_the_date(); ?>
-                    </p>
-
-                    <p class="excerpt text-gray-700 mb-4">
-                        <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
-                    </p>
-
-                    <a href="<?php the_permalink(); ?>" class="text-sky-400 hover:text-sky-300 font-semibold">
-                        More information →
-                    </a>
-            </div>
+            <!-- Excerpt + Auto “More information →” link -->
+            <!-- wp:post-excerpt {"moreText":"More information →","className":"text-gray-700 mb-4 text-sky-400 hover:text-sky-300 font-semibold"} /-->
         </article>
+        
         <!-- /wp:post-template -->
-         
+
     </div>
+    <!-- /wp:query -->
 
 </main>
 
