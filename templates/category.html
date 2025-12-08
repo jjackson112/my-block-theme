@@ -1,51 +1,49 @@
-<!-- wp:template-part {"slug":"header", "tagName":"header"} /-->
+<!--
+Title: Category
+Slug: category
+-->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
+<!-- Container -->
 <!-- wp:group {"className":"max-w-5xl mx-auto px-6 py-12"} -->
 <div class="max-w-5xl mx-auto px-6 py-12">
 
     <!-- Category Title -->
     <!-- wp:query-title {"type":"archive","level":1,"className":"text-3xl font-bold text-sky-800 mb-6"} /-->
 
-    <!-- Category Description (optional) -->
+    <!-- Category Description -->
     <!-- wp:term-description {"className":"text-gray-700 mb-8"} /-->
 
-    <!-- Posts Loop -->
+    <!-- Posts Grid -->
     <!-- wp:query {"query":{"postType":"post","inherit":true},"layout":{"type":"default"}} -->
-    <!-- wp:post-template {"className":"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"}-->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- wp:post-template -->
+        <article class="bg-white shadow rounded-xl overflow-hidden hover:shadow-lg transition flex flex-col flex-1">
 
-        <!-- Article Card -->
-        <!-- wp:group {"tagName":"article","className":"bg-white shadow rounded-xl overflow-hidden hover:shadow-lg transition"} -->
-        <article class="bg-white shadow rounded-xl overflow-hidden hover:shadow-lg transition">
             <!-- Featured Image -->
-            <!-- wp:post-featured-image {"className":"sizeSlug":"medium", "className":"w-full h-48 object-cover"} /-->
+            <!-- wp:post-featured-image {"className":"w-full aspect-video object-cover"} /-->
 
-            <!-- Content Wrapper -->
-            <!-- wp:group {"className":"p-5"} -->
-            <div class="p-5">
-                <!-- Title -->
-                <!-- wp:post-title {"isLink":true, "className":"text-xl font-semibold text-sky-900 hover:text-sky-600"} /-->
+            <div class="p-5 flex flex-col flex-1">
+                <!-- Post Title -->
+                <!-- wp:post-title {"isLink":true,"className":"text-xl font-semibold text-sky-900 hover:text-sky-600"} /-->
 
                 <!-- Excerpt -->
                 <!-- wp:post-excerpt {"className":"text-gray-700 mt-3 mb-4"} /-->
 
                 <!-- Read More -->
-                <!-- wp:read-more {"content":"Read more →","className":"text-sky-500 hover:text-sky-400 font-medium"} /-->
-
+                <!-- wp:read-more {"content":"Read more →","className":"text-sky-500 hover:text-sky-400 font-medium mt-auto"} /-->
             </div>
-            <!-- /wp:group -->   
 
         </article>
-        <!-- /wp:group -->
-    
-    <!-- /wp:post-template -->
-
-    <!-- wp:pagination {"className":"mt-10"} -->
-        <!-- wp:pagination-previous {"label":"← Previous"} /-->
-        <!-- wp:pagination-next {"label":"Next →"} /-->
-    <!-- /wp:pagination -->
-
+        <!-- /wp:post-template -->
+    </div>
     <!-- /wp:query -->
+
+    <!-- Pagination -->
+    <!-- wp:template-part {"slug":"pagination","theme":"my-block-theme","tagName":"section"} /-->
+
 </div>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer"} /-->
+<!-- Footer -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

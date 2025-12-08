@@ -21,11 +21,3 @@ Theme: Dorothy de Long block theme
     opacity: 1;
     transform: translateY(0);
 }
-
-.wp-block-navigation__container a {
-    text-decoration: none !important;
-    color: #000 !important;
-    font-size: 1.25rem;       /* text-xl */
-    font-weight: 300;         /* light */
-    padding: 0.25rem 0;       /* subtle breathing room */
-}
