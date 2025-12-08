@@ -54,12 +54,12 @@
     <!-- MOBILE MENU -->
         <div 
             data-mobile-menu
-            class="hidden max-h-0 overflow-hidden transition-all duration-300 ease-out flex-col bg-white px-6 py-4 space-y-4 shadow md:hidden opacity-0 transform -translate-y-2 w-56 rounded-lg absolute right-6 top-16 z-50 block py-2 text-slate-950 font-semibold hover:text-sky-300"
+            class="hidden max-h-0 overflow-hidden transition-all duration-300 ease-out flex flex-col bg-white px-6 py-4 space-y-4 shadow md:hidden opacity-0 transform -translate-y-2 w-56 rounded-lg absolute right-6 top-16 z-50"
         >
         <!-- Close button -->
             <button 
                 data-mobile-close
-                class="absolute top-4 right-4"
+                class="absolute top-4 right-4 text-black hover:text-sky-400"
                 aria-label="Close menu"
             >
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2">
@@ -67,8 +67,10 @@
                 </svg>
             </button>
 
-        <!-- wp:navigation {"overlayMenu":"never"} /-->
+        <div class="flex flex-col text-black space-y-4 pt-10">
+            <!-- wp:navigation {"overlayMenu":"never", "className":"flex flex-col !space-y-4"} /-->
         </div>
+    </div>
 
 </header>
 <!-- /wp:group -->
