@@ -1,8 +1,8 @@
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("mobile-btn");
-    const menu = document.getElementById("mobile-menu");
-    const closeBtn = document.getElementById('mobileMenuClose');
+    const btn = document.getElementById("data-mobile-btn");
+    const menu = document.getElementById("data-mobile-menu");
+    const closeBtn = document.getElementById('data-mobile-close');
 
     const openMenu = () => {
         menu.classList.remove("hidden");
