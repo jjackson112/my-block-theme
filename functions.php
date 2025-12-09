@@ -49,7 +49,8 @@ function dorothy_enqueue_assets() {
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'events' ),
-            'supports'    => array('title', 'editor', 'thumbnail', 'excerpt'),
+            'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+            'show_in_rest' => true // make it block friendly
         ));
     }
     add_action ( 'init', 'create_custom_post_types' );
