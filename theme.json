@@ -38,11 +38,15 @@
   },
 
   "styles": {
-    "elements": {
-      "link": { "color": { "text": "var(--wp--preset--color--sky-blue-400)" } }
-    },
     "color": {
       "text": "var(--wp--preset--color--sky-blue-950)"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--sky-blue-400)"
+        }
+      }
     },
     "blocks": {
       "core/query": {
@@ -60,3 +64,4 @@
     }
   }
 }
+

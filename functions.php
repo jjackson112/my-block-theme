@@ -38,6 +38,22 @@ function dorothy_enqueue_assets() {
 
 }
 
+// Create custom post type
+    function create_custom_post_types() {
+        register_post_type('events',
+        array(
+            'labels' => array(
+                'name' => __( 'Events' ),
+                'singular_name' => __( 'Event' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'events' ),
+            'supports'    => array('title', 'editor', 'thumbnail', 'excerpt'),
+        ));
+    }
+    add_action ( 'init', 'create_custom_post_types' );
+
 // Editor styles support
 add_action('after_setup_theme', function () {
     add_theme_support('editor-styles');
