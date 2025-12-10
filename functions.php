@@ -1,4 +1,24 @@
 <?php
+// Create custom post type
+    function create_custom_post_types() {
+        register_post_type('events', array(
+            'labels' => array(
+                'name' => __( 'Events' ),
+                'singular_name' => __( 'Event' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'events' ),
+            'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+            'show_in_rest' => true // make it block friendly
+        ));
+    }
+    add_action ( 'init', 'create_custom_post_types' );
+
+add_action('admin_menu', function() {
+    remove_menu_page('edit.php?post_type=event'); // remove ghost Events menu
+});
+
 // Enqueue scripts and styles
 add_action('wp_enqueue_scripts', 'dorothy_enqueue_assets');
 function dorothy_enqueue_assets() {
@@ -38,23 +58,6 @@ function dorothy_enqueue_assets() {
 
 }
 
-// Create custom post type
-    function create_custom_post_types() {
-        register_post_type('events',
-        array(
-            'labels' => array(
-                'name' => __( 'Events' ),
-                'singular_name' => __( 'Event' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array( 'slug' => 'events' ),
-            'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
-            'show_in_rest' => true // make it block friendly
-        ));
-    }
-    add_action ( 'init', 'create_custom_post_types' );
-
 // Editor styles support
 add_action('after_setup_theme', function () {
     add_theme_support('editor-styles');
@@ -71,4 +74,4 @@ function dorothy_theme_setup() {
         'flex-width'  => true,
     ]);
 }
-?>
+
