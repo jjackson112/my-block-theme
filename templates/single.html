@@ -28,7 +28,16 @@ Slug: blog
     <!-- wp:comments {"className":"mt-12"} /-->
 
     <!-- Pagination -->
-    <!-- wp:template-part {"slug":"pagination","theme":"my-block-theme","tagName":"section"} /-->
+    <!-- wp:group {"className":"flex justify-between mt-12 font-semibold"} -->
+    <div class="flex justify-between mt-12 font-semibold">
+
+        <!-- wp:post-navigation-link {"type":"previous","label":"← Previous","className":"hover:text-sky-300"} /-->
+
+        <!-- wp:post-navigation-link {"type":"next","label":"Next →","className":"hover:text-sky-300 text-right"} /-->
+
+    </div>
+<!-- /wp:group -->
+
 </main>
 <!-- /wp:group -->
 
