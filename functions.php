@@ -19,6 +19,21 @@ add_action('admin_menu', function() {
     remove_menu_page('edit.php?post_type=event'); // remove ghost Events menu
 });
 
+add_action('acf/init', function() {
+    if( function_exists('acf_register_block_type') ) {
+        acf_register_block_type(array(
+            'name'              => 'event-details',
+            'title'             => __('Event Details'),
+            'description'       => __('Displays event info.'),
+            'render_template'   => 'template-parts/blocks/event-details.php', // your template file
+            'category'          => 'formatting',
+            'icon'              => 'calendar',
+            'keywords'          => array('event', 'details'),
+            'mode'              => 'edit',
+        ));
+    }
+});
+
 // Enqueue scripts and styles
 add_action('wp_enqueue_scripts', 'dorothy_enqueue_assets');
 function dorothy_enqueue_assets() {
