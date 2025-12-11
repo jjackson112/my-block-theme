@@ -29,6 +29,7 @@ add_action('acf/init', function() {
             'category'          => 'formatting',
             'icon'              => 'calendar',
             'keywords'          => array('event', 'details'),
+            'post_types'        => array('events'), // only for events cpt
             'mode'              => 'edit',
         ));
     }
