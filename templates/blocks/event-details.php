@@ -1,15 +1,16 @@
 <?php
 // Check if ACF is active
 if( function_exists('get_field') ):
-    $date = get_field('event_date');
-    $location = get_field('event_location');
+    $date = get_field('date');
+    $time = get_field('time')
 ?>
+
 <div class="event-details">
-    <?php if($date): ?>
-        <p class="event-date"><?php echo esc_html($date); ?></p>
+    <?php if($date); ?>
+        <h4><i class="fa-regular fa-calendar text-sky-950"></i><?php echo esc_html($date); ?></h4>
     <?php endif; ?>
-    <?php if($location): ?>
-        <p class="event-location"><?php echo esc_html($location); ?></p>
+    <?php if(time); ?>
+        <p class="text-lg font-medium"><i class="fa-regular fa-clock text-sky-950"></i><?php echo esc_html($time); ?></p>
     <?php endif; ?>
 </div>
 <?php endif; ?>

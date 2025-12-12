@@ -7,43 +7,40 @@ Slug: blog
 
 <main class="max-w-6xl mx-auto px-6 py-12">
 
-<!-- Page Title -->
-<h1 class="text-3xl font-bold text-center text-sky-900 mb-10">Latest Travels</h1>
+    <!-- Page Title -->
+    <h1 class="text-3xl font-bold text-center text-sky-900 mb-10">Latest Travels</h1>
 
-<!-- Posts Loop -->
-<!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date"}} -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-    <!-- wp:post-template -->
-    <article class="bg-white p-6 shadow rounded-lg flex flex-col hover:shadow-lg transition-shadow duration-300">
+    <!-- Posts Loop -->
+    <!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date"}} -->
+    <!-- wp:post-template {"className":"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"} -->
+        <article class="bg-white p-6 shadow rounded-lg flex flex-col hover:shadow-lg transition-shadow duration-300">
 
-        <!-- Featured Image -->
-        <!-- wp:post-featured-image {"className":"w-full h-72 object-cover"} /-->
+            <!-- Featured Image -->
+            <!-- wp:post-featured-image {"className":"w-full h-64 object-cover rounded"} /-->
 
-        <!-- Post Title -->
-        <!-- wp:post-title {"level":2,"isLink":true,"className":"text-2xl font-semibold text-sky-950 mb-2 hover:text-sky-400"} /-->
+            <!-- Post Title -->
+            <!-- wp:post-title {"level":2,"isLink":true,"className":"text-2xl font-semibold text-sky-950 mb-2 hover:text-sky-400"} /-->
 
-        <!-- Post Meta -->
-        <!-- wp:group {"className": "text-gray-500 mb-8"} --> 
-        <div class="text-gray-500 mb-8 flex items-center gap-2">
-            <i class="fa-regular fa-calendar text-sky-950"></i>
-        <!-- wp:post-date /-->
-        </div>
+            <!-- Post Meta --> 
+            <div class="text-gray-500 mb-8 flex items-center gap-2">
+                <i class="fa-regular fa-calendar text-sky-950"></i>
+                <!-- wp:post-date /-->
+            </div>
 
-        <!-- Excerpt (flex-grow keeps heights equal) -->
-        <div class="flex-grow">
+            <!-- Excerpt (flex-grow keeps heights equal) -->
+            <div class="flex-grow">
             <!-- wp:post-excerpt {"className":"text-sky-950 text-sm mb-4"} /-->
-        </div>
+            </div>
 
-        <!-- Read More -->
-        <!-- wp:read-more {"content":"Read More →", "className":"text-sky-400 font-semibold hover:text-sky-300"} /-->
+            <!-- Read More -->
+            <!-- wp:read-more {"content":"Read More →", "className":"text-sky-400 font-semibold hover:text-sky-300"} /-->
 
-    </article>
-    <!-- /wp:post-template -->
-</div>
-<!-- /wp:query -->
+        </article>
+        <!-- /wp:post-template -->
+    <!-- /wp:query -->
 
-<!-- Pagination -->
-<!-- wp:template-part {"slug":"pagination","tagName":"section"} /-->
+    <!-- Pagination -->
+    <!-- wp:template-part {"slug":"pagination","tagName":"section"} /-->
 
 </main>
 
