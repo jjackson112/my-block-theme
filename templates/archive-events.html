@@ -8,10 +8,8 @@
 
     <!-- Posts Loop -->
     <!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"events","order":"desc","orderBy":"date"}} -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-8">
-
-        <!-- wp:post-template -->
-        <article class="bg-white rounded-lg shadow overflow-hidden">
+    <!-- wp:post-template {"className":"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"} -->
+    <article class="bg-white rounded-lg shadow overflow-hidden">
             
         <!-- Featured Image -->
         <!-- wp:post-featured-image {"className":"w-full h-48 object-cover"} /-->
@@ -28,11 +26,8 @@
             <!-- Excerpt + Auto “More information →” link -->
             <!-- wp:post-excerpt {"moreText":"More information →","className":"text-gray-700 mb-4 text-sky-400 hover:text-sky-300 font-semibold"} /-->
             </div>
-        </article>
-        
-        <!-- /wp:post-template -->
-
-    </div>
+    </article>
+    <!-- /wp:post-template -->
     <!-- /wp:query -->
 
 </main>
