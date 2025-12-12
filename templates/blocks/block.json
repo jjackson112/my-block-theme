@@ -1,0 +1,16 @@
+{
+  "apiVersion": 2,
+  "name": "mytheme/event-details",
+  "title": "Event Details",
+  "description": "Shows the date and time for an event.",
+  "category": "widgets",
+  "icon": "calendar",
+  "keywords": ["event", "details", "date", "time"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}
