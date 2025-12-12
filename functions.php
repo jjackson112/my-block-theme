@@ -19,7 +19,7 @@ add_action('admin_menu', function() {
     remove_menu_page('edit.php?post_type=event'); // remove ghost Events menu
 });
 
-//ACF block resignation
+// ACF block resignation
 add_action('acf/init', function() {
     if( function_exists('acf_register_block_type') ) {
         acf_register_block_type(array(
