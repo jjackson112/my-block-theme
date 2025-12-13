@@ -6,7 +6,7 @@
     <h1 class="text-3xl font-bold text-center text-sky-900 mb-10">Events</h1>
 
     <!-- Posts Loop -->
-    <!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"events","order":"desc","orderBy":"date"}} -->
+    <!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"event","order":"desc","orderBy":"date"}} -->
     <!-- wp:post-template {"className":"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"} -->
     <article class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow duration-300">
             
@@ -22,9 +22,10 @@
             <!-- wp:post-title {"level":2, "isLink":true, "className":"text-xl font-semibold text-sky-950 mb-2 !mt-0 hover:text-sky-300"} /-->
 
             <!-- Event Date -->
-                <p class="text-md mb-2">
-                    <i class="fa-regular fa-clock text-sky-950"></i>
-                </p>
+            <p class="text-md mb-2">
+                <i class="fa-regular fa-clock text-sky-950"></i>
+                <!-- wp:acf/field {"name":"date"} /-->
+            </p>
             
             <!-- Excerpt (flex-grow keeps heights equal) -->
             <div class="flex-grow">
@@ -32,7 +33,7 @@
             </div>
 
             <!-- Read More -->
-            <!-- wp:read-more {"content":"Read More →", "className":"text-sky-400 font-semibold hovtext-sky-300 font-semibold"} /-->
+            <!-- wp:read-more {"content":"Read More →","className":"text-sky-400 font-semibold hover:text-sky-300"} /-->
             
     </article>
     <!-- /wp:post-template -->
@@ -41,7 +42,7 @@
 </main>
 
 <!-- wp:group {"tagName":"footer","className":"text-center bg-black py-5"} -->
-<footer id="contact"class="text-center bg-black py-5">
+<footer id="contact" class="text-center bg-black py-5">
 
     <!-- wp:heading {"level":2,"className":"text-xl text-sky-400 font-semibold pt-3 pb-3"} -->
     <h2 class="text-xl text-sky-400 font-semibold pt-3 pb-3">Connect with Me</h2>
