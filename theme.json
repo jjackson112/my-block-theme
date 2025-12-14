@@ -41,13 +41,7 @@
     "color": {
       "text": "var(--wp--preset--color--sky-blue-950)"
     },
-    "elements": {
-      "link": {
-        "color": {
-          "text": "var(--wp--preset--color--sky-blue-400)"
-        }
-      }
-    },
+
     "blocks": {
       "core/query": {
         "layout": { "type": "grid", "columns": 3, "gap": "2rem" }
@@ -56,10 +50,18 @@
         "layout": { "type": "grid", "columns": 3, "gap": "2rem" }
       },
       "core/navigation": {
-        "color": { "text": "var(--wp--preset--color--sky-blue-400)" }
+        "elements": {
+          "link": {
+            "color": {
+              "text": "inherit"
+            }
+          }
+        }
       },
       "core/navigation-link": {
-        "color": { "text": "var(--wp--preset--color--sky-blue-400)" }
+        "color": {
+          "text": "inherit"
+        }
       }
     }
   }
