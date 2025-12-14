@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const closeMenu = () => {
-        menu.classList.add("opacity-100", "max-h-screen", "translate-y-0");
+        menu.classList.remove("opacity-100", "scale-100");
+        menu.classList.add("opacity-0", "scale-95");
+        menu.setAttribute("aria-hidden", "true");
+        
         setTimeout(() => {
             menu.classList.add("hidden");
         }, 300); // matches transition duration
