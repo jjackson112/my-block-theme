@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!btn || !menu || !closeBtn) return;
 
     const openMenu = () => {
-        menu.classList.remove("hidden",  "opacity-0", "max-h-0", "-translate-y-2");
-        menu.classList.add("opacity-100", "max-h-screen", "translate-y-0");
+        menu.classList.remove("hidden",  "opacity-0", "scale-95");
+        menu.classList.add("opacity-100", "scale-100");
+        menu.setAttribute("aria-hidden", "false");
     };
 
     const closeMenu = () => {
