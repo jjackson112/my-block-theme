@@ -1,4 +1,6 @@
 <?php
+// need the ID for archives, blocks, and query loops - not templates
+// pass the post id when outside a classic php loop
 
 $date = get_field('date', get_the_ID());
 $time = get_field('time', get_the_ID());
