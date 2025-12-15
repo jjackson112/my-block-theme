@@ -15,6 +15,7 @@
       "palette": [
         { "slug": "white", "color": "#ffffff", "name": "White" },
         { "slug": "black", "color": "#000000", "name": "Black" },
+        { "slug": "sky-blue-300", "color": "#87ceeb", "name": "Sky Blue 300"},
         { "slug": "sky-blue-400", "color": "#38bdf8", "name": "Sky Blue 400" },
         { "slug": "sky-blue-500", "color": "#0ea5e9", "name": "Sky Blue 500" }
       ],
@@ -75,4 +76,3 @@
     }
   }
 }
-
