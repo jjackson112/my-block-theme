@@ -17,16 +17,13 @@
             </div>
         <!-- /wp:group -->
 
-            <div class="p-5 flex-col flex-1">
+            <div class="p-5 flex flex-col flex-1">
             <!-- Post Title -->
             <!-- wp:post-title {"level":2, "isLink":true, "className":"text-xl font-semibold text-sky-950 mb-2 !mt-0 hover:text-sky-300"} /-->
 
             <!-- Event Date -->
-            <p class="text-md mb-2">
-                <i class="fa-regular fa-clock text-sky-950"></i>
-                <!-- wp:acf/event-details /-->
-            </p>
-            
+            <!-- wp:acf/field {"name":"date"} /-->
+           
             <!-- Excerpt (flex-grow keeps heights equal) -->
             <div class="flex-grow">
                 <!-- wp:post-excerpt {"excerptLength":20,"className":"text-sky-950 text-sm mb-4"} /-->
