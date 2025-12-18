@@ -36,6 +36,18 @@ add_action('acf/init', function() {
     }
 });
 
+// Meta field block resignation
+register_meta(
+  'post',
+  'post_meta_string',
+  array(
+    'show_in_rest' => true,
+    'type'         => 'string',
+    'default'      => 'The default string value',
+    'single'       => true,
+  )
+);
+
 // Enqueue scripts and styles
 add_action('wp_enqueue_scripts', 'dorothy_enqueue_assets');
 function dorothy_enqueue_assets() {
